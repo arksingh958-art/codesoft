@@ -1,0 +1,38 @@
+# simple calculator 
+
+# taking input from user 
+
+num1 = float(input("enter first number:"))
+num2 = float(input("enter your second numbr:"))
+
+# displaying operation choices 
+print("\n choose an operation :")
+print("1. additions(+)")
+print("2. subtraction(-)")
+print("3. mutiplication(*)")
+print("4. division(\)")
+
+choice = input ("enter yor choice(1/2/3/4):")
+
+# performing calculation
+
+if choice == "1":
+    result = num1 + num2
+    print("resut=", result)
+
+elif choice == "2":
+    result = num1 - num2
+    print("result=", result)
+
+elif choice == "3":
+    result = num1 * num2
+    print("result=", result)
+
+elif choice == "4":
+    if num2!=0:
+     result = num1 / num2 
+     print("result=",result)
+else:
+   print("error: canot be divide zero.")
+   
+
